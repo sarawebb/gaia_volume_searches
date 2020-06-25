@@ -64,41 +64,6 @@
 #Table	I_345_gaia2:
 #Name: I/345/gaia2
 #Title: GaiaSource DR2 data
-#Column	RA_ICRS	(F15.11)	Barycentric right ascension (ICRS) at Ep=2015.5 (ra)	[ucd=pos.eq.ra;meta.main]
-#Column	e_RA_ICRS	(F7.4)	Standard error of right ascension (e_RA*cosDE) (ra_error)	[ucd=stat.error;pos.eq.ra]
-#Column	DE_ICRS	(F15.11)	Barycentric declination (ICRS) at Ep=2015.5 (dec)	[ucd=pos.eq.dec;meta.main]
-#Column	e_DE_ICRS	(F7.4)	Standard error of declination (dec_error)	[ucd=stat.error;pos.eq.dec]
-#Column	Source	(I19)	Unique source identifier (unique within a particular Data Release) (source_id) (G2)	[ucd=meta.id;meta.main]
-#Column	Plx	(F10.4)	? Absolute stellar parallax (parallax)	[ucd=pos.parallax]
-#Column	e_Plx	(F7.4)	? Standard error of parallax (parallax_error)	[ucd=stat.error;pos.parallax]
-#Column	pmRA	(F9.3)	? Proper motion in right ascension direction (pmRA*cosDE) (pmra) (3)	[ucd=pos.pm;pos.eq.ra]
-#Column	e_pmRA	(F6.3)	? Standard error of proper motion in right ascension direction (pmra_error)	[ucd=stat.error;pos.pm;pos.eq.ra]
-#Column	pmDE	(F9.3)	? Proper motion in declination direction (pmdec) (4)	[ucd=pos.pm;pos.eq.dec]
-#Column	e_pmDE	(F6.3)	? Standard error of proper motion in declination direction (pmdec_error)	[ucd=stat.error;pos.pm;pos.eq.dec]
-#Column	Dup	(I1)	[0/1] Source with duplicate sources (duplicated_source) (21)	[ucd=meta.code.status]
-#Column	FG	(E11.4)	G-band mean flux (phot_g_mean_flux)	[ucd=phot.flux;stat.mean;em.opt]
-#Column	e_FG	(E11.4)	Error on G-band mean flux (phot_g_mean_flux_error)	[ucd=stat.error;phot.flux;stat.mean]
-#Column	Gmag	(F7.4)	G-band mean magnitude (Vega) (phot_g_mean_mag) (23)	[ucd=phot.mag;stat.mean;em.opt]
-#Column	e_Gmag	(F6.4)	Standard error of G-band mean magnitude (Vega) (added by CDS) (phot_g_mean_mag_error) (37)	[ucd=stat.error;phot.mag;stat.mean]
-#Column	FBP	(E11.4)	? Mean flux in the integrated BP band (phot_bp_mean_flux)	[ucd=phot.flux;stat.mean;em.opt.B]
-#Column	e_FBP	(E11.4)	? Error on the integrated BP mean flux (phot_bp_mean_flux_error) (25)	[ucd=stat.error;phot.flux;stat.mean]
-#Column	BPmag	(F7.4)	? Integrated BP mean magnitude (Vega) (phot_bp_mean_mag) (26)	[ucd=phot.mag;stat.mean;em.opt.B]
-#Column	e_BPmag	(F6.4)	? Standard error of BP mean magnitude (Vega) (added by CDS) (phot_bp_mean_mag_error) (37)	[ucd=stat.error;phot.mag;stat.mean]
-#Column	FRP	(E11.4)	? Mean flux in the integrated RP band (phot_rp_mean_flux)	[ucd=phot.flux.density;em.opt.R]
-#Column	e_FRP	(E11.4)	? Error on the integrated RP mean flux (phot_rp_mean_flux_error) (28)	[ucd=stat.error;phot.flux;stat.mean]
-#Column	RPmag	(F7.4)	? Integrated RP mean magnitude (Vega) (phot_rp_mean_mag) (29)	[ucd=phot.mag;stat.mean;em.opt.R]
-#Column	e_RPmag	(F6.4)	? Standard error of RP mean magnitude (Vega) (added by CDS) (phot_rp_mean_mag_error) (37)	[ucd=stat.error;phot.mag;stat.mean]
-#Column	BP-RP	(F7.4)	? BP-RP colour (photBpMeanMag-photRMeanMag) (bp_rp)	[ucd=phot.color;em.opt.B;em.opt.R]
-#Column	RV	(F7.2)	? Spectroscopic radial velocity in the solar barycentric reference frame (radial_velocity)	[ucd=spect.dopplerVeloc.opt;pos.barycenter]
-#Column	e_RV	(F5.2)	? Radial velocity error (radial_velocity_error) (30)	[ucd=stat.error;spect.dopplerVeloc.opt;pos.barycenter]
-#Column	Teff	(F7.2)	? Stellar effective temperature (estimate from Apsis-Priam) (teff_val)	[ucd=phys.temperature.effective]
-#Column	AG	(F7.4)	? Estimate of extinction in the G band from Apsis-Priam (a_g_val)	[ucd=phys.absorption.gal]
-#Column	E(BP-RP)	(F7.4)	? Estimate of redenning E(BP-RP) from Apsis-Priam (e_bp_min_rp_val)	[ucd=phot.color.excess]
-#Column	Rad	(F6.2)	? Estimate of radius from Apsis-FLAME (radius_val)	[ucd=phys.size.radius]
-#Column	Lum	(F9.3)	? Esimate of luminosity from Apsis-FLAME (lum_val)	[ucd=phys.luminosity]
-RA_ICRS	e_RA_ICRS	DE_ICRS	e_DE_ICRS	Source	Plx	e_Plx	pmRA	e_pmRA	pmDE	e_pmDE	Dup	FG	e_FG	Gmag	e_Gmag	FBP	e_FBP	BPmag	e_BPmag	FRP	e_FRP	RPmag	e_RPmag	BP-RP	RV	e_RV	Teff	AG	E(BP-RP)	Rad	Lum
-deg	mas	deg	mas	 	mas	mas	mas/yr	mas/yr	mas/yr	mas/yr	 	e-/s	e-/s	mag	mag	e-/s	e-/s	mag	mag	e-/s	e-/s	mag	mag	mag	km/s	km/s	K	mag	mag	solRad	solLum
----------------	-------	---------------	-------	-------------------	----------	-------	---------	------	---------	------	-	-----------	-----------	-------	------	-----------	-----------	-------	------	-----------	-----------	-------	------	-------	-------	-----	-------	-------	-------	------	---------
 158.44090962486	 0.0900	-36.94674509212	 0.1221	5442245832055966720	   10.6719	 0.1704	  -72.369	 0.149	 -119.861	 0.264	0	 1.3835e+03	 1.1173e+00	17.8359	0.0009	 1.4216e+02	 4.6439e+00	19.9694	0.0355	 2.0875e+03	 5.9209e+00	16.4628	0.0031	 3.5066	       	     	       	       	       	      	
 157.90426331742	 0.0466	-37.25083282271	 0.0601	5442255869397242112	   20.2123	 0.0818	   35.439	 0.078	 -242.353	 0.130	0	 2.6395e+03	 1.5187e+00	17.1346	0.0006	 1.6127e+03	 7.1236e+00	17.3325	0.0048	 1.5732e+03	 5.8276e+00	16.7699	0.0040	 0.5625	       	     	       	       	       	      	
 158.05902602496	 0.6438	-37.22349785329	 0.8690	5442258923115708288	   10.6282	 1.3195	   -7.906	 1.090	  -32.384	 1.528	1	 6.6116e+02	 4.1971e+00	18.6376	0.0069	 3.0024e+02	 8.0845e+00	19.1577	0.0292	 1.1137e+03	 8.0420e+00	17.1450	0.0078	 2.0127	       	     	       	       	       	      	
